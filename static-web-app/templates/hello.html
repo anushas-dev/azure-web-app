@@ -1,0 +1,65 @@
+<!doctype html>
+
+<head>
+    <title>Hello Azure - Python Quickstart</title>
+    <style>
+        body {
+          font-family: 'Roboto', sans-serif;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+    
+        header {
+          background-color: #4285F4;
+          color: white;
+          text-align: center;
+          padding: 20px;
+        }
+    
+        h1 {
+          font-size: 40px;
+          margin: 0;
+          text-align: center;
+        }
+    
+        p, form {
+          font-size: 20px;
+          margin: 0;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        .button {
+          background-color: #4285F4;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin-top: 20px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+    
+        .button:hover {
+          background-color: #3367D6;
+        }
+      </style>
+</head>
+<html>
+
+<body>
+    <main>
+        <div>
+            <h1>Greetings Page</h1>
+            <p> Hello {{name}},
+                It is nice to meet you!
+            </p>
+            <a href="{{ url_for('index') }}" class="button">Back home</a>
+        </div>
+    </main>
+</body>
+
+</html>
